@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💝 Valentines day is coming up.. so I have one thing to ask ! 💝</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="VDAY CSS.css">
+</head>
+<body>
+    
+    <div id="gameScreen" class="screen active">
+        <div class="container">
+            <div class="title">💝 Valentines day is coming up.. so I have one thing to ask ! 💝</div>
+            <div class="instructions">Use wasd to move around and collect pokeballs!!</div>
+            <canvas id="gameCanvas"></canvas>
+            <div class="stats">
+                <div>Pokéballs Collected: <span id="pokeballsCount">0</span> / <span id="totalPokeballs">15</span></div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+                </div>
+                <div class="message" id="message"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="questionScreen" class="screen">
+        <div class="container question-container">
+            <div class="question-title">will you be my valentine Max ^.^?</div>
+            <div class="eevee-container">
+                <canvas id="questionCanvas"></canvas>
+            </div>
+            <div class="button-container">
+                <button id="yesButton" class="valentine-button yes-button">YES! 💝</button>
+                <button id="noButton" class="valentine-button no-button">No</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="happyScreen" class="screen">
+        <div class="container happy-container">
+            <div class="happy-title">YAY!!! 💝 You said yes!!! 💝</div>
+            <div class="happy-subtitle">Eevee is so happy!!</div>
+            <div class="eevee-container">
+                <canvas id="happyCanvas"></canvas>
+            </div>
+            <div class="happy-hearts" aria-hidden="true">💕 💖 💗 💓 💝 💕 💖 💗</div>
+            <button id="playAgainButton" class="valentine-button yes-button">Play again 💝</button>
+        </div>
+    </div>
+
+   
+    <div id="sadScreen" class="screen">
+        <div class="container sad-container">
+            <div class="sad-title">Eevee is sad... /:</div>
+            <div class="eevee-container">
+                <canvas id="sadCanvas"></canvas>
+            </div>
+            <div class="sad-message">Maybe next time? 💔</div>
+            <button id="tryAgainButton" class="valentine-button">Try Again?</button>
+        </div>
+    </div>
+
+    <script src="VDAY JS.js"></script>
+</body>
+</html>
